@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        ol, ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #2c3a46;
+        }
+        body {
+            color: #2c3a46;
+            background: #fff;
+            font-size: 14px;
+            line-height: 1.6em;
+            font-family: Helvetica,STHeiti,"Microsoft YaHei",Verdana,Arial,Tahoma,sans-serif;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .page-block-title {
+            margin-bottom: 14px;
+        }
+        .page-block-title h3 {
+            float: left;
+            height: 18px;
+            line-height: 18px;
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #f2b100;
+            border-left: solid 3px #f2b100;
+        }
+        .page-block-title h4 {
+            float: right;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        .page-block-content {
+            width: 850px;
+            height: 320px;
+        }
+        .page-block-content ul {
+            width: 900px;
+        }
+        .widget-big-case li {
+            float:left;
+            width:270px;
+            height:320px;
+            margin-right:20px;
+            margin-bottom:24px;
+            background:#f8f8f8;
+            position:relative
+        }
+        .widget-big-case li:hover .widget-big-case-qrcode-wrap {
+            top:-10px;
+            height:170px;
+            opacity:1;
+            -webkit-transition:.3s all ease-in-out .2s;
+            -moz-transition:.3s all ease-in-out .2s;
+            transition:.3s all ease-in-out .2s
+        }
+        .widget-big-case-image {
+            overflow:hidden;
+            width:270px;
+            height:170px;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center
+        }
+        .widget-big-case-content {
+            padding:15px;
+            position:relative;
+            z-index:20;
+            background:#f8f8f8
+        }
+        .widget-big-case-title {
+            margin-bottom:7px;
+            font-weight:bold;
+            font-size:14px
+        }
+        .widget-big-case-intro {
+            height:60px;
+            margin-bottom:7px;
+            line-height:20px;
+            font-size:12px;
+            color:#666
+        }
+        .widget-big-case-footer {
+            font-size:12px;
+            color:#666
+        }
+        .widget-big-case-city {
+            float:left;
+            overflow:hidden;
+            width:130px;
+            white-space:nowrap;
+            text-overflow:ellipsis
+        }
+        .widget-big-case-provider {
+            float:right;
+            text-align:right;
+            overflow:hidden;
+            width:100px;
+            white-space:nowrap;
+            text-overflow:ellipsis
+        }
+        .widget-big-case-qrcode-wrap {
+            overflow:hidden;
+            position:absolute;
+            z-index:10;
+            top:142px;
+            left:50%;
+            margin-left:-70px;
+            width:140px;
+            height:140px;
+            background:#fff;
+            opacity:.3;
+            text-align:center;
+            -webkit-box-shadow:0 1px 1px 2px rgba(0,0,0,0.1);
+            box-shadow:0 1px 1px 2px rgba(0,0,0,0.1);
+            -webkit-transition:.3s all ease-in-out;
+            -moz-transition:.3s all ease-in-out;
+            transition:.3s all ease-in-out;
+            -webkit-transform:translate3d(0, 0, 0);
+            -moz-transform:translate3d(0, 0, 0);
+            -ms-transform:translate3d(0, 0, 0);
+            transform:translate3d(0, 0, 0)
+        }
+        .widget-big-case-qrcode-intro {
+            position:relative;
+            top:-13px;
+            font-size:12px
+        }
+        .widget-big-case-qrcode {
+            width:140px;
+            height:140px
+        }
+        .widget-big-case li:hover .widget-big-case-qrcode-wrap {
+            top:-15px;
+            height:190px
+        }
+        .widget-big-case-qrcode-wrap {
+            top:160px;
+            margin-left:-85px;
+            width:170px;
+            height:100px;
+            line-height:20px
+        }
+        .widget-big-case-qrcode {
+            width:170px;
+            height:170px
+        }
+        .loading {
+            background: url("http://b.yzcdn.cn/v2/image/loader.gif") center center no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="container main-container">
+<h6>http://youzan.com/case >> 食品</h6>
+    <div class="js-page-block page-block page-block-5">
+        <div class="page-block-title clearfix">
+            <h3>食品</h3>
+            <h4>
+                <a class="js-child-category active" data-cid="32" href="http://youzan.com/case/list?cid=32">
+                    咖啡茶饮                                    </a>
+                <a class="js-child-category " data-cid="48" href="http://youzan.com/case/list?cid=48">
+                    坚果炒货                                    </a>
+                <a class="js-child-category " data-cid="34" href="http://youzan.com/case/list?cid=34">
+                    水果生鲜                                    </a>
+                <a class="js-child-category " data-cid="63" href="http://youzan.com/case/list?cid=63">
+                    乡土特产                                    </a>
+                <a class="js-child-category " data-cid="36" href="http://youzan.com/case/list?cid=36">
+                    蛋糕烘焙                                    </a>
+                <a class="js-child-category " data-cid="35" href="http://youzan.com/case/list?cid=35">
+                    酒水饮料                                    </a>
+                <a class="js-child-category " data-cid="33" href="http://youzan.com/case/list?cid=33">
+                    营养滋补                                    </a>
+            </h4>
+        </div>
+        <div class="js-block-content page-block-content">
+            <ul class="js-block-content-32 widget-big-case clearfix">
+                <li data-mp-weixin="safetea">
+                    <div class="widget-big-case-image" style="background-image:url(http://imgqn.koudaitong.com/upload_files/2014/11/24/FmxKUkLCVnhFvp-xHiyuz4qrTCZe.jpg)"></div>
+                    <div class="widget-big-case-qrcode-wrap">
+                        <img class="js-case-qrcode widget-big-case-qrcode" src="http://static.koudaitong.com/v2/image/blank.png">
+                        <span class="widget-big-case-qrcode-intro">微信扫码 参观店铺</span>
+                    </div>
+                    <div class="widget-big-case-content">
+                        <p class="widget-big-case-title">乡土乡亲</p>
+                        <p class="widget-big-case-intro">用“透明溯源”的方法，死磕一杯无农药的安心好茶</p>
+                        <p class="widget-big-case-footer clearfix">
+                            <span class="widget-big-case-city">城市：<a href="/case/search?ccode=110100">北京 北京</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li data-mp-weixin="efutongroup">
+                    <div class="widget-big-case-image" style="background-image:url(http://imgqn.koudaitong.com/upload_files/2014/12/04/Fk05il3xRZF0j5mFZcOebO2RS255.jpg)"></div>
+                    <div class="widget-big-case-qrcode-wrap">
+                        <img class="js-case-qrcode widget-big-case-qrcode" src="http://static.koudaitong.com/v2/image/blank.png">
+                        <span class="widget-big-case-qrcode-intro">微信扫码 参观店铺</span>
+                    </div>
+                    <div class="widget-big-case-content">
+                        <p class="widget-big-case-title">艺福堂茗茶旗舰店</p>
+                        <p class="widget-big-case-intro">互联网茶叶领导品牌，以“以茶行道，创新生活”为使命，致力于打造百年茶品牌。</p>
+                        <p class="widget-big-case-footer clearfix">
+                            <span class="widget-big-case-city">城市：<a href="/case/search?ccode=330100">浙江 杭州</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li data-mp-weixin="slowtea">
+                    <div class="widget-big-case-image" style="background-image:url(http://imgqn.koudaitong.com/upload_files/2014/12/04/FvzQW_Ib-ZYtrWwS3RgHTAiyoKSO.jpg)"></div>
+                    <div class="widget-big-case-qrcode-wrap">
+                        <img class="js-case-qrcode widget-big-case-qrcode" src="http://static.koudaitong.com/v2/image/blank.png">
+                        <span class="widget-big-case-qrcode-intro">微信扫码 参观店铺</span>
+                    </div>
+                    <div class="widget-big-case-content">
+                        <p class="widget-big-case-title">寻慢</p>
+                        <p class="widget-big-case-intro">『寻慢』武夷山原创茶叶品牌。感恩自然、尊重传统、关注内心！</p>
+                        <p class="widget-big-case-footer clearfix">
+                            <span class="widget-big-case-city">城市：<a href="/case/search?ccode=350700">福建 南平</a></span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://b.yzcdn.cn/v2/vendor/jquery-1.10.2.min.js" onerror="_cdnFallback(this)"></script>
+<script src="http://b.yzcdn.cn/v2/vendor/plugin/jquery.cookie.min.js" onerror="_cdnFallback(this)"></script>
+<script type="text/javascript">
+    //获取CDN资源失败时加载
+    function _cdnFallback(org){
+        var nodeName = org.nodeName.toLowerCase()
+                , elem = document.createElement(nodeName)
+                , map = {script: 'src', link: 'href'}
+                , srcName = map[nodeName]
+                , src = org[srcName];
+
+        src = src.replace('kdt-static.qiniudn.com', 'kdt-static.b0.upaiyun.com');
+        if(nodeName == 'link'){
+            elem.rel = 'stylesheet';
+        }
+        elem[srcName] = src;
+        (document.body || document.head).appendChild(elem);
+    }
+    //命名空间管理--注册方法
+    var Namespace = new Object();
+    Namespace.Register = function(namespace,obj){
+        var namespaces = namespace.split(".");
+        var current = window;
+        for(var i = 0; i < namespaces.length; i++){
+            var _namespace = namespaces[i];
+            if(!current[_namespace]){
+                current[_namespace] = {};
+            }
+            if(obj && i == namespaces.length -1){
+                for(var o in obj){
+                    current[_namespace][o] = obj[o];
+                }
+            }
+            current = current[_namespace];
+        }
+    };
+    //注册命名空间upin.wx
+    Namespace.Register("upin.wx");
+    upin.wx.App = {
+        initialize: function () {
+            this.events();
+        },
+        events: function () {
+            var self = this,
+                    timeOut;
+
+            // 切换案例
+            /*$('.js-child-category').on('mouseover', function () {
+             var _this = this;
+             timeOut = setTimeout(function () {
+             self.toggleChildCategory(_this);
+             }, 100);
+             }).on('mouseout', function () {
+             clearTimeout(timeOut);
+             });*/
+
+            // 加载二维码
+            $('.js-block-content').on('mouseover', 'li', function () {
+                self.loadQrcode(this);
+            }).on('mouseout', function () {
+                $(this).find('.js-case-qrcode').removeClass('loading');
+            });
+        },
+
+        // 加载二维码
+        loadQrcode: function (elem) {
+            var $elem = $(elem),
+                    mpWeixin = $elem.data('mp-weixin'),
+                    imgSrc = 'http://open.weixin.qq.com/qr/code/?username=' + mpWeixin;
+
+            $('.js-case-qrcode', $elem).addClass('loading').attr('src', imgSrc);
+        },
+
+        caseTemplate: function (opts) {
+            var provider = '',
+                    template = '';
+
+            if (opts.provider_name) {
+                provider =
+                        '<span class="widget-big-case-provider">' +
+                        '拍档：<a href="' + _global.url.fuwu + '/detail/?id=' + opts.provider_id +'" target="_blank">' + opts.provider_name +'</a>' +
+                        '</span>';
+            }
+
+            template =
+                    '<li data-mp-weixin="'+ opts.mp_weixin +'">' +
+                    '<div class="widget-big-case-image" style="background-image:url('+ opts.logo +')"></div>' +
+                    '<div class="widget-big-case-qrcode-wrap">' +
+                    '<img class="js-case-qrcode widget-big-case-qrcode loading" src="'+ _global.url.static +'/image/blank.png">' +
+                    '<span class="widget-big-case-qrcode-intro">微信扫码 参观店铺</span>' +
+                    '</div>' +
+                    '<div class="widget-big-case-content">' +
+                    '<p class="widget-big-case-title">'+ opts.team_name +'</p>' +
+                    '<p class="widget-big-case-intro">'+ opts.introduction +'</p>' +
+                    '<p class="widget-big-case-footer clearfix">' +
+                    '<span class="widget-big-case-city">' +
+                    '城市：<a href="' + _global.url.youzan + '/case/search?ccode='+ opts.city_code +'">'+ opts.province_name + ' ' + opts.city_name +'</a>' +
+                    '</span>' +
+                    provider +
+                    '</p>' +
+                    '</div>' +
+                    '</li>';
+
+            return template;
+        },
+
+        // 切换案例
+        toggleChildCategory: function (elem) {
+            var self = this,
+                    $elem = $(elem),
+                    cid = $elem.data('cid'),
+                    $content = $elem.parents('.js-page-block').find('.js-block-content'),
+                    $allCategory = $elem.parents('.js-page-block').find('.js-block-content').find('ul'),
+                    $categoryBlock = $content.find('.js-block-content-' + cid);
+
+            $elem.parent('h4').find('.active').removeClass('active');
+            $elem.addClass('active');
+            $content.addClass('loading');
+
+            // 隐藏全部
+            $allCategory.hide();
+
+            // 如果已经存在该分类下的案例，则直接显示
+            if ($categoryBlock.size() > 0) {
+                $content.removeClass('loading');
+                $categoryBlock.show();
+                return;
+            }
+
+            $.ajax({
+                url: _global.url.youzan + '/case/index/casebycategory.json',
+                data: {
+                    cid: cid
+                },
+                success: function (res) {
+                    if (res.code === 0) {
+                        var $ul = $('<ul/>').addClass('widget-big-case clearfix js-block-content-' + cid)
+                                .appendTo($content);
+
+                        if (res.data.length > 0) {
+                            $.each(res.data, function (i, v) {
+                                $ul.append(self.caseTemplate(v));
+                            })
+                        }
+
+                    } else {
+                        console.error('请求失败');
+                    }
+                },
+                error: function (res) {
+                    console.error('请求失败');
+                }
+            }).always(function () {
+                $content.removeClass('loading');
+            });
+        }
+
+    };
+    Namespace.Register("upin.message",{ show: function(){
+        console.log('hello');
+    }});
+    //加载页面效果
+    $(function () {
+        upin.wx.App.initialize();
+        upin.message.show();
+    });
+</script>
+</body>
+</html>
